@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="contactoBody">
     <nav class="navDesktop">
@@ -22,7 +23,7 @@
     </nav>
     <nav class="navMobile">
         <div class="navLogo">
-            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
+            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo" data-aos="flip-right" data-aos-duration="1000"></a>
         </div>
         <div class="menuContainer">
             <input class="menuCheck" type="checkbox" name="menu" id="">
@@ -36,7 +37,7 @@
             </ul>
         </div>
     </nav>
-    <header class="contactoHeader">
+    <header class="contactoHeader" data-aos="zoom-in-down" data-aos-duration="1000">
         <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60288.89460936903!2d-96.18536877276877!3d19.192760077266218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c3446930048ff7%3A0x72ec23c04add27f9!2sSalon%20Jardin%20la%20Finca!5e0!3m2!1ses-419!2smx!4v1655597623012!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </header>
     <main class="contactoMain">  
@@ -131,5 +132,9 @@
             </ul>
         </div>      
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

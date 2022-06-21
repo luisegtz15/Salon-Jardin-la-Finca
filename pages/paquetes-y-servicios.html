@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paquetes y servicios</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="paquetesBody">
     <nav class="navDesktop">
@@ -36,7 +37,7 @@
             </ul>
         </div>
     </nav>
-    <header class="paq-servHeader">
+    <header class="paq-servHeader" data-aos="fade-down">
         <p>
             En el <strong>Salón Jardín la Finca</strong>, nos comprometemos a que disfrutes al máximo
             tus eventos; por esa razón, contamos con un equipo profesional con
@@ -74,8 +75,8 @@
                 <button>> Ver detalles</button>
             </div>  
         </div>
-        <h2 class="serviciosHeader">Servicios adicionales</h2>
-        <div class="serviciosContainer">
+        <h2 class="serviciosHeader" data-aos-duration="1000">Servicios adicionales</h2>
+        <div class="serviciosContainer" data-aos="fade-left">
             <div>
                 <h4>Estos servicios te podrían interesar para tus eventos.</h4>
                 <ul>
@@ -118,5 +119,9 @@
             </ul>
         </div>      
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

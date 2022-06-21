@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="indexBody">
     <nav class="navDesktop">
@@ -22,7 +23,7 @@
     </nav>
     <nav class="navMobile">
         <div class="navLogo">
-            <a href="./index.html"><img class="navLogoImg" src="./assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
+            <a href="./index.html"><img class="navLogoImg" src="./assets/img/La_Finca_Logo.png" alt="laFincaLogo" data-aos="flip-right" data-aos-duration="1000"></a>
         </div>
         <div class="menuContainer">
             <input class="menuCheck" type="checkbox" name="menu" id="">
@@ -42,7 +43,7 @@
         </div> 
         <h2>¡Conócenos!</h2>
     </header>
-    <main class="indexMain">
+    <main class="indexMain" data-aos="fade-left" data-aos-duration="1000">
         <div class="indexContent">
             <div>
                 <h3>Surgen los sueños</h3> 
@@ -61,7 +62,7 @@
             </div>  
         </div>
     </main>
-    <aside class="indexAside">
+    <aside class="indexAside" div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/o9wrlGXB4c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </aside>
     <footer>
@@ -82,5 +83,9 @@
             </ul>
         </div>      
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

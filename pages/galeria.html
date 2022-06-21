@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="galeriaBody">
     <nav class="navDesktop">
@@ -22,7 +23,7 @@
     </nav>
     <nav class="navMobile">
         <div class="navLogo">
-            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
+            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo" data-aos="flip-right" data-aos-duration="1000"></a>
         </div>
         <div class="menuContainer">
             <input class="menuCheck" type="checkbox" name="menu" id="">
@@ -50,7 +51,7 @@
             </div>
             <button class="btnVerTodos">> Ver todos</button>
         </div>
-        <div class="googleReview">  
+        <div class="googleReview" data-aos="fade-right" data-aos-duration="1000">  
             <!--Esto lo busqué en google ya que supuse que era parecido a ingresar un mapa
             <script src="https://apps.elfsight.com/p/platform.js" defer></script> 
             <div class="elfsight-app-7c1e0812-1f55-4c3c-828c-3ebdf4fc684d"></div>-->
@@ -90,7 +91,7 @@
             </div>    
             <a class="googleIcon" href="https://www.google.com/search?client=firefox-b-d&q=salon+jardin+la+finca#lrd=0x85c3446930048ff7:0x72ec23c04add27f9,1,,,"><img src="../assets/img/google.png" alt=""></a>
         </div>
-        <div class="galeriaVideo">
+        <div class="galeriaVideo" div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/nsDktgtzV80?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="galeriaOpciones">
@@ -129,5 +130,9 @@
             </ul>
         </div>      
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
