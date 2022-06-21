@@ -1,9 +1,9 @@
 /* T O D O S */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     box-sizing: border-box;
     box-sizing: content-box;
 }
@@ -16,9 +16,6 @@
         font-family: "Quicksand";
         width: 100%;
         height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
     }
     main{
         font-size: 16px;
@@ -43,7 +40,6 @@
     }
     nav{
         grid-area: nav;
-        width: 100%;
         z-index: 10;
         background-color: #0a0a0af3;
         display: flex;
@@ -128,7 +124,6 @@
         }
         .indexHeader{
             grid-area: indexHeader;
-            width: 100%;
             margin-bottom: 50px;
             display: flex;
             flex-direction: column;
@@ -152,7 +147,6 @@
         }
         .indexMain{
             grid-area: indexMain;
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -169,7 +163,6 @@
         }
         .indexAside{
             grid-area: indexAside;
-            width: 100%;
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
@@ -196,12 +189,10 @@
         }
         .eventosHeader{
             grid-area: eventosHeader;
-            width: 100%;
             margin-bottom: 50px;
         }
         .eventosMain{
             grid-area: eventosMain;
-            width: 100%;
             padding: 40px;
             display: flex;
             flex-direction: column;
@@ -231,7 +222,6 @@
         }
         .eventosAside{
             grid-area: eventosAside;
-            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -255,7 +245,6 @@
         }
         .paquetesHeader{
             grid-area: paquetesHeader;
-            width: 100%;
             margin: 50px;
         }
         .paq-servHeader{
@@ -270,7 +259,6 @@
         }
         .paq-servMain{
             grid-area: paq-servMain;
-            width: 100%;
         }
         .paquetesContainer{
             display: flex;
@@ -360,12 +348,10 @@
         }
         .galeriaHeader{
             grid-area: galeriaHeader;
-            width: 100%;
             margin-bottom: 50px;
         }
         .galeriaMain{
             grid-area: galeriaMain;
-            width: 100%;
         }
         .galeriaSlider{
             display: flex;
@@ -492,7 +478,6 @@
         }
         .contactoHeader{
             grid-area: contactoHeader;
-            width: 100%;
             margin-bottom: 50px;
         }
         .googleMap{
@@ -502,7 +487,6 @@
         }
         .contactoMain{
             grid-area: contactoMain;
-            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -567,13 +551,11 @@
         }
         .contactoAside{
             grid-area: contactoAside;
-            width: 100%;
             display: none;
         }
         /* F O O T E R */
         footer{
             grid-area: footer;
-            width: 100%;
             padding: 20px 0px;
             background-color: #0a0a0af3;
             color: white;
