@@ -233,16 +233,6 @@
             margin-bottom: 50px;
         }
         /* P A Q U E T E S  Y  S E R V I C I O S */
-        .paq-servHeader{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .paq-servHeader p{
-            width: 80%;
-            text-align: center;
-        }
         .paquetesBody{
             display: grid;
             grid-template-columns: repeat(1,auto);
@@ -255,6 +245,16 @@
         .paquetesHeader{
             grid-area: paquetesHeader;
             margin: 50px;
+        }
+        .paq-servHeader{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .paq-servHeader p{
+            width: 80%;
+            text-align: center;
         }
         .paq-servMain{
             grid-area: paq-servMain;
