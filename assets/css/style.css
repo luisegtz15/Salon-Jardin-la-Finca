@@ -246,7 +246,7 @@
         .paquetesBody{
             display: grid;
             grid-template-columns: repeat(1,auto);
-            grid-template-rows: repeat(5, auto);
+            grid-template-rows: repeat(4, auto);
             grid-template-areas: "nav"
                                  "paquetesHeader"
                                  "paq-servMain"
@@ -339,7 +339,7 @@
         .galeriaBody{
             display: grid;
             grid-template-columns: repeat(1,auto);
-            grid-template-rows: repeat(3, auto);
+            grid-template-rows: repeat(4, auto);
             grid-template-areas: "nav"
                                  "galeriaHeader"
                                  "galeriaMain"
