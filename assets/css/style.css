@@ -1,9 +1,9 @@
 /* T O D O S */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 *{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
     box-sizing: content-box;
 }
@@ -13,9 +13,7 @@
 @media only screen and (min-width: 0px) and (max-width: 767px){
     body{
         background-color: white;
-        font-family: "Quicksand";
-        width: 100%;
-        height: 100%;
+        font-family: "Quicksand";  
     }
     main{
         font-size: 16px;
@@ -96,14 +94,14 @@
         background-color: white;
         border-radius: 10px;
     }
-        .menuCheck{
-            width: 36px;
-            height: 36px;
-            opacity: 0%;
-            position: absolute;
-            z-index: 10;
-            transition: scale 1s ;
-        }
+    .menuCheck{
+        width: 36px;
+        height: 36px;
+        opacity: 0%;
+        position: absolute;
+        z-index: 10;
+        transition: scale 1s ;
+    }
         .menuCheck:active ~ .menuIcon{
             transform: scale(90%);
             background-color: rgb(187, 187, 187);
@@ -112,18 +110,8 @@
             left: 0%;
         }
         /* I N D E X */
-        .indexBody{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(5, auto);
-            grid-template-areas: "nav         nav         nav         nav"
-            "indexHeader indexHeader indexHeader indexHeader"
-            "indexMain   indexMain   indexMain   indexMain"
-            "indexAside  indexAside  indexAside  indexAside"
-            "footer      footer      footer      footer";
-        }
+
         .indexHeader{
-            grid-area: indexHeader;
             margin-bottom: 50px;
             display: flex;
             flex-direction: column;
@@ -135,7 +123,6 @@
         }
         .indexSlider{
             margin-top: -50px;
-            width: 100%;
             background-color: #0a0a0af3;
             display: flex;
             flex-direction: column;
@@ -143,26 +130,21 @@
             align-items: center;
         }
         .indexSlider img{
-            width: 100%;
+            max-width: 100%;
         }
         .indexMain{
-            grid-area: indexMain;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: #0a0a0af3;
-            color: white;
-        }
-        .indexContent{
             padding: 40px;
-            width: 90%;
+            color: white;
         }
         .indexContent h3{
             margin-bottom: 20px;
         }
         .indexAside{
-            grid-area: indexAside;
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
@@ -177,22 +159,10 @@
             height: 90%;
         }
         /* E V E N T O S */
-        .eventosBody{
-            display: grid;
-            grid-template-columns: repeat(1,auto);
-            grid-template-rows: repeat(5, auto);
-            grid-template-areas: "nav"
-            "eventosHeader"
-            "eventosMain"
-            "eventosAside"
-            "footer";
-        }
         .eventosHeader{
-            grid-area: eventosHeader;
             margin-bottom: 50px;
         }
         .eventosMain{
-            grid-area: eventosMain;
             padding: 40px;
             display: flex;
             flex-direction: column;
@@ -221,7 +191,6 @@
             background-color: #b1250cc2;
         }
         .eventosAside{
-            grid-area: eventosAside;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -234,17 +203,7 @@
             margin-bottom: 50px;
         }
         /* P A Q U E T E S  Y  S E R V I C I O S */
-        .paquetesBody{
-            display: grid;
-            grid-template-columns: repeat(1,auto);
-            grid-template-rows: repeat(4, auto);
-            grid-template-areas: "nav"
-                                 "paquetesHeader"
-                                 "paq-servMain"
-                                 "footer";
-        }
         .paquetesHeader{
-            grid-area: paquetesHeader;
             margin: 50px;
         }
         .paq-servHeader{
@@ -256,9 +215,6 @@
         .paq-servHeader p{
             width: 80%;
             text-align: center;
-        }
-        .paq-servMain{
-            grid-area: paq-servMain;
         }
         .paquetesContainer{
             display: flex;
@@ -337,21 +293,8 @@
             width: 80%;
         }
         /* G A L E R Í A */
-        .galeriaBody{
-            display: grid;
-            grid-template-columns: repeat(1,auto);
-            grid-template-rows: repeat(4, auto);
-            grid-template-areas: "nav"
-                                 "galeriaHeader"
-                                 "galeriaMain"
-                                 "footer";
-        }
         .galeriaHeader{
-            grid-area: galeriaHeader;
             margin-bottom: 50px;
-        }
-        .galeriaMain{
-            grid-area: galeriaMain;
         }
         .galeriaSlider{
             display: flex;
@@ -466,18 +409,7 @@
             color: white;
         }
         /* C O N T A C T O */
-        .contactoBody{
-            display: grid;
-            grid-template-columns: repeat(1,auto);
-            grid-template-rows: repeat(5, auto);
-            grid-template-areas: "nav"
-                                 "contactoHeader"
-                                 "contactoMain"
-                                 "contactoAside"
-                                 "footer";
-        }
         .contactoHeader{
-            grid-area: contactoHeader;
             margin-bottom: 50px;
         }
         .googleMap{
@@ -486,7 +418,6 @@
             height: 300px;
         }
         .contactoMain{
-            grid-area: contactoMain;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -550,7 +481,6 @@
             border: 1px solid rgba(0, 0, 0, 0.116);
         }
         .contactoAside{
-            grid-area: contactoAside;
             display: none;
         }
         /* F O O T E R */
@@ -741,9 +671,9 @@
         align-items: center;
         background-color: #0a0a0af3;
         color: white;
+        padding: 20px;
     }
     .indexContent{
-        padding: 20px;
         width: 90%;
     }
     .indexContent h3{
