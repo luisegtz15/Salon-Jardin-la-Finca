@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="contactoBody">
+    <nav class="navDesktop">
+        <div class="navLogo">
+            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
+        </div>
+        <ul>
+            <li class="indexNav"><a href="../index.html">Inicio</a></li>
+            <li class="eventosNav"><a href="./eventos.html">Eventos</a></li></li>
+            <li class="paquetesNav"><a href="./paquetes-y-servicios.html">Paquetes y servicios</a></li>
+            <li class="galeriaNav"><a href="./galeria.html">Galería</a></li>
+            <li class="contactoNav"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav class="navMobile">
+        <div class="navLogo">
+            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
+        </div>
+        <div class="menuContainer">
+            <input class="menuCheck" type="checkbox" name="menu" id="">
+            <img class="menuIcon" src="../assets/img/menu.png" alt="">
+            <ul class="navList">
+                <li class="indexNav"><a href="../index.html">Inicio</a></li>
+                <li class="eventosNav"><a href="./eventos.html">Eventos</a></li></li>
+                <li class="paquetesNav"><a href="./paquetes-y-servicios.html">Paquetes y servicios</a></li>
+                <li class="galeriaNav"><a href="./galeria.html">Galería</a></li>
+                <li class="contactoNav"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="contactoHeader">
+        <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60288.89460936903!2d-96.18536877276877!3d19.192760077266218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c3446930048ff7%3A0x72ec23c04add27f9!2sSalon%20Jardin%20la%20Finca!5e0!3m2!1ses-419!2smx!4v1655597623012!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </header>
+    <main class="contactoMain">  
+        <div class="contactoDatos">
+            <h1>¡Pregúntanos!</h1>
+            <fieldset>
+                <form class="contactoForm" action="Datos-contacto" method="post">  
+                    <div>
+                        <label for="Nombre">Nombre*</label>
+                        <input type="text" name="Nombre" id="" required>
+                    </div> 
+                    <div>
+                        <label for="Email">Email*</label>
+                        <input type="email" name="Email" id="" required>
+                    </div>
+                    <div>
+                        <label for="Asunto">Asunto*</label>
+                        <select name="Asunto" id="" required>
+                            <option disabled selected="Seleccione una opcion">Seleccione una opción</option>
+                            <option value="Cotizar">Cotizar</option>
+                            <option value="Paquetes y servicios">Paquetes y servicios</option>
+                            <option value="Pregunta">Pregunta</option>
+                            <option value="Reclamo">Reclamo</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="contactoMsg">
+                        <label for="Mensaje">Mensaje*</label>
+                        <textarea name="Mensaje" id=""></textarea>
+                    </div>
+                    <div class="recibirCorreos">
+                        <input class="checkboxContacto" type="checkbox" name="recibirCorreos" id=""> 
+                        <label for="recibirCorreos">Recibir notificaciones a su correo electrónico</label>
+                    </div>
+                    <div class="btnForm">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+    <aside class="contactoAside">
+        <div class="asideDatos">
+            <h3>Información de contacto</h3>
+            <p>
+                Háblanos para cualquier duda que tengas, nosotros
+                estaremos muy felices de contestarte, esperamos
+                verte pronto.
+            </p>
+            <div class="contactoInfo">
+                <div>
+                    <a class="locationIcon" href="https://www.google.com/maps/dir//Salon+Jardin+la+Finca+Av+Ursulo+Galv%C3%A1n,+20+de+Noviembre+%26+Tarimoya+91855+Veracruz,+Ver./@19.1977972,-96.1810963,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85c3446930048ff7:0x72ec23c04add27f9!2m2!1d-96.1810963!2d19.1977972" target="_blank"><img src="../assets/img/location2.png" alt="locationIcon"></a>
+                    <p>Av Ursulo Galván, Col Tarimoya, 91855 - Veracruz, México</p>
+                </div>
+                <div>
+                    <a class="whatsappIcon" href="https://wa.me/522292500733" target="_blank"><img src="../assets/img/whatsapp.png" alt="phoneIcon"></a>
+                    <p>229 250 0733</p>
+                </div>
+                <div>
+                    <a class="mailIcon" href="https://office.live.com/start/Outlook.aspx?omkt=es-CL" target="_blank"><img src="../assets/img/mail2.png" alt="mailIcon"></a>
+                    <p>salonjardinlafinca@outlook.com</p>
+                </div>
+            </div>
+            <div class="redesSociales">
+                <h3>Redes sociales</h2>
+                <p> Síguenos en nuestras redes sociales, estamos muy
+                    activos y podrás ver más contenido de los eventos
+                    que realizamos! </p>
+                    <div>
+                        <a class="facebookIcon" href="https://www.facebook.com/salonjardinlafinca" target="_blank"><img  src="../assets/img/facebook2.png" alt="facebookFooter"></a> 
+                        <a class="instagramIcon" href="https://www.instagram.com/jardin_la_finca/" target="_blank"><img src="../assets/img/instagram2.png" alt="instagramFooter"></a>
+                        <a class="twitterIcon" href="https://twitter.com/Salonjardin_ver" target="_blank"><img src="../assets/img/twitter.png" alt="twitterFooter"></a>
+                    </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="footerLogo">
+            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
+        </div>
+        <div class="footerDerechos">
+            <p> Salón jardín la finca 2022 ©, Todos los derechos reservados</p>
+        </div>  
+        <div class="footerImgUrl">
+            <ul>
+                <li class="locationIcon"><a href="https://www.google.com/maps/dir//Salon+Jardin+la+Finca+Av+Ursulo+Galv%C3%A1n,+20+de+Noviembre+%26+Tarimoya+91855+Veracruz,+Ver./@19.1977972,-96.1810963,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85c3446930048ff7:0x72ec23c04add27f9!2m2!1d-96.1810963!2d19.1977972" target="_blank"><img src="../assets/img/location2.png" alt="locationIcon"></a></li>
+                <li class="whatsappIcon"><a href="https://wa.me/522292500733" target="_blank"><img src="../assets/img/whatsapp.png" alt="phoneIcon"></a></li>
+                <li class="mailIcon"><a href="https://office.live.com/start/Outlook.aspx?omkt=es-CL" target="_blank"><img src="../assets/img/mail2.png" alt="mailIcon"></a></li>
+                <li class="facebookIcon"><a href="https://www.facebook.com/salonjardinlafinca" target="_blank"><img  src="../assets/img/facebook2.png" alt="facebookFooter"></a> </li>
+                <li class="instagramIcon"><a href="https://www.instagram.com/jardin_la_finca/" target="_blank"><img src="../assets/img/instagram2.png" alt="instagramFooter"></a></li>
+                <li class="twitterIcon"><a href="https://twitter.com/Salonjardin_ver" target="_blank"><img src="../assets/img/twitter.png" alt="twitterFooter"></a></li>
+            </ul>
+        </div>      
+    </footer>
+</body>
+</html>
