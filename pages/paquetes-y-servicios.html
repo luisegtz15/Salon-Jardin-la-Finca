@@ -5,120 +5,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paquetes y servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="paquetesBody">
-    <nav class="navDesktop">
-        <div class="navLogo">
-            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
-        </div>
-        <ul>
-            <li class="indexNav"><a href="../index.html">Inicio</a></li>
-            <li class="eventosNav"><a href="./eventos.html">Eventos</a></li></li>
-            <li class="paquetesNav"><a href="./paquetes-y-servicios.html">Paquetes y servicios</a></li>
-            <li class="galeriaNav"><a href="./galeria.html">Galería</a></li>
-            <li class="contactoNav"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <nav class="navMobile">
-        <div class="navLogo">
-            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
-        </div>
-        <div class="menuContainer">
-            <input class="menuCheck" type="checkbox" name="menu" id="">
-            <img class="menuIcon" src="../assets/img/menu.png" alt="">
-            <ul class="navList">
-                <li class="indexNav"><a href="../index.html">Inicio</a></li>
-                <li class="eventosNav"><a href="./eventos.html">Eventos</a></li></li>
-                <li class="paquetesNav"><a href="./paquetes-y-servicios.html">Paquetes y servicios</a></li>
-                <li class="galeriaNav"><a href="./galeria.html">Galería</a></li>
-                <li class="contactoNav"><a href="./contacto.html">Contacto</a></li>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/img/La_Finca_Logo.png" alt="" width="90"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./paquetes-y-servicios.html">Paquetes y servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
             </ul>
+          </div>
         </div>
     </nav>
-    <header class="paq-servHeader" data-aos="fade-down">
-        <p>
-            En el <strong>Salón Jardín la Finca</strong>, nos comprometemos a que disfrutes al máximo
-            tus eventos; por esa razón, contamos con un equipo profesional con
-            el objetivo de cumplir tus expectativas durante el evento. Recuerda
-            que estamos para ti para lo que necesites, deja que te asesoremos
-            para ayudarte a encontrar lo que necesitas, ya sea desde una boda,
-            XV años, banquete o hasta una reunión social, lo que necesites te
-            ayudaremos.
-            Salón Jardín la Finca cuenta con <strong>paquetes y servicios</strong> que te
-            pueden interesar, échales un vistazo. <strong>Te estamos esperando!</strong>   
-        </p>
-    </header>
-    <main class="paq-servMain">
-        <h2 class="paquetesHeader">Paquetes</h2>
-        <div class="paquetesContainer">
-            <div class="paqueteEmpresarial">
-                <h3>PAQUETE EMPRESARIAL 120 P</h3>
-                <img src="../assets/img/paqEmp.jpg" alt="paqueteEmpresarial" >
-                <button>> Ver detalles</button>
-            </div>
-            <div class="graduacion">
-                <h3>PAQUETE GRADUACIÓN 180 P</h3>
-                <img src="../assets/img/grad.jpg" alt="graduacion">
-                <button>> Ver detalles</button>
-            </div>
-                
-            <div class="premiumMixto">
-                <h3>PAQUETE PREMIUM MIXTO 180 P</h3>
-                <img src="../assets/img/premium mixt.jpg" alt="premiumMixto">
-                <button>> Ver detalles</button>
-            </div>
-            <div class="boda">
-                <h3>PAQUETE BODA 200 P</h3>
-                <img src="../assets/img/boda1.jpg" alt="boda">
-                <button>> Ver detalles</button>
-            </div>  
+    <header class="mt-5" data-aos="fade-down">
+        <div class="row-fluid d-flex justify-content-center">
+            <p class="col-11 col-xl-7 text-center">
+                En el <strong>Salón Jardín la Finca</strong>, nos comprometemos a que disfrutes al máximo
+                tus eventos; por esa razón, contamos con un equipo profesional con
+                el objetivo de cumplir tus expectativas durante el evento. Recuerda
+                que estamos para ti para lo que necesites, deja que te asesoremos
+                para ayudarte a encontrar lo que necesitas, ya sea desde una boda,
+                XV años, banquete o hasta una reunión social, lo que necesites te
+                ayudaremos.
+                Salón Jardín la Finca cuenta con <strong>paquetes y servicios</strong> que te
+                pueden interesar, échales un vistazo. <strong>Te estamos esperando!</strong>   
+            </p>
         </div>
-        <h2 class="serviciosHeader" data-aos-duration="1000">Servicios adicionales</h2>
-        <div class="serviciosContainer" data-aos="fade-left">
-            <div>
-                <h4>Estos servicios te podrían interesar para tus eventos.</h4>
-                <ul>
-                    <li>Personal y logística</li>
-                    <li>Decoración para eventos</li>
-                    <li>Mesa de dulces</li>
-                    <li>Vajillas y utencilios</li>
-                    <li>Servicios de iluminación</li>
-                    <li>Servicios de sonido</li>
-                    <li>Servicios de video</li>
-                </ul>
-                <p>Contacta con nosotros para más detalles.</p>
-                <div class="btnContactar">
-                    <button>Contactar</button>
+    </header>
+    <main>
+        <h2 class="text-center my-5">Paquetes</h2>
+        <div class="d-flex flex-wrap justify-content-evenly">
+            <div class="card mb-5" style="width: 20rem;">
+                <img src="../assets/img/paqEmp.jpg" alt="paqueteEmpresarial" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PAQUETE EMPRESARIAL 120 P</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mb-5" style="width: 20rem;">
+                <img src="../assets/img/grad.jpg" alt="paqueteEmpresarial" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PAQUETE PREMIUM MIXTO 180 P</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mb-5" style="width: 20rem;">
+                <img src="../assets/img/premium mixt.jpg" alt="paqueteEmpresarial" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PAQUETE PREMIUM MIXTO 180 P</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mb-5" style="width: 20rem;">
+                <img src="../assets/img/boda1.jpg" alt="paqueteEmpresarial" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PAQUETE BODA 200 P</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
-        <div class="serviciosImg">
-            <img src="../assets/img/personalYLogistica.jpg" alt="Personal">
-            <img src="../assets/img/decoraciones4.jpg" alt="Decoraciones">
-            <img src="../assets/img/dulces.jpg" alt="mesaDeDulces">
-            <img src="../assets/img/vajillas.jpg" alt="vajillas">
+        <h2 class="text-center my-5">Servicios adicionales</h2>
+        <div class="row-fluid d-flex flex-column flex-xl-row">
+            <div class="col-12 d-flex justify-content-center col-xl-5" data-aos="fade-left">
+                <div class="mx-4">
+                    <h4>Estos servicios te podrían interesar para tus eventos.</h4>
+                    <ul>
+                        <li>Personal y logística</li>
+                        <li>Decoración para eventos</li>
+                        <li>Mesa de dulces</li>
+                        <li>Vajillas y utencilios</li>
+                        <li>Servicios de iluminación</li>
+                        <li>Servicios de sonido</li>
+                        <li>Servicios de video</li>
+                    </ul>
+                    <div class="text-center">
+                        <button>Contactar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5 col-xl-7 mt-xl-0 row-fluid d-flex justify-content-center">
+                <div id="carouselExampleIndicators" class="carousel slide col-10" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="../assets/img/personalYLogistica.jpg" alt="eventos1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="../assets/img/decoraciones4.jpg" alt="eventos2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="../assets/img/dulces.jpg" alt="eventos10">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="../assets/img/vajillas.jpg" alt="xvs2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="footerLogo">
-            <a href="../index.html"><img class="navLogoImg" src="../assets/img/La_Finca_Logo.png" alt="laFincaLogo"></a>
+        <!-- Footer >= 1200px -->
+          <div class="row-fluid d-none d-xl-flex mt-5 pt-4 pb-1">
+              <div class="col-4">
+                  <h5 class="text-center">Contacto</h5>
+                  <div class="d-flex align-items-center my-4 ms-4">
+                      <a class="contactFooterIcons" href=""><img src="../assets/img/location2.png" alt="..." width="30px"></a>
+                      <p class="mb-0">Av Ursulo Galván, Col Tarimoya, 91855 - Veracruz, México</p>
+                  </div>
+                  <div class="d-flex align-items-center my-4 ms-4">
+                      <a class="contactFooterIcons" href=""><img src="../assets/img/whatsapp.png" alt="..." width="30px"></a>
+                      <p class="mb-0">229 250 0733</p>
+                  </div>
+                  <div class="d-flex align-items-center my-4 ms-4">
+                      <a class="contactFooterIcons" href=""><img src="../assets/img/mail2.png" alt="..." width="30px"></a>
+                      <p class="mb-0">salonjardinlafinca@outlook.com</p>
+                  </div>
+              </div>
+              <div class="col-4 d-flex flex-column justify-content-between align-items-center ">
+                  <div class="mt-3">
+                      <a href=""><img src="../assets/img/La_Finca_Logo.png" alt="..." width="80px"></a>
+                  </div>
+                  <p class="text-center">© 2022 Salon Jardín la Finca. Todos los derechos reservados.</p>
+              </div>
+              <div class="col-4">
+                  <h5 class="mb-4 text-center">Redes sociales</h5>
+                  <div class="d-flex justify-content-center">
+                      <a class="socialMediaFooterIcons" href=""><img src="../assets/img/facebook2.png" alt="..." width="30px"></a>
+                      <a class="socialMediaFooterIcons" href=""><img src="../assets/img/instagram2.png" alt="..." width="30px"></a>
+                      <a class="socialMediaFooterIcons" href=""><img src="../assets/img/twitter.png" alt="..." width="30px"></a>
+                  </div>
+              </div>
+          </div>
+        <!-- Footer < 1200px -->
+          <div class="row-fluid d-flex flex-column justify-content-center align-items-center mt-5 py-4 d-xl-none">
+                <div class="text-center">
+                    <a href=""><img src="../assets/img/La_Finca_Logo.png" alt="..." width="70px"></a>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap my-0">
+                  <a class="mobileFooterIcons" href=""><img src="../assets/img/location2.png" alt="..." width="30px"></a>
+                  <a class="mobileFooterIcons" href=""><img src="../assets/img/whatsapp.png" alt="..." width="30px"></a>
+                  <a class="mobileFooterIcons" href=""><img src="../assets/img/mail2.png" alt="..." width="30px"></a>
+                  <a class="mobileFooterIcons" href=""><img src="../assets/img/facebook2.png" alt="..." width="30px"></a>
+                  <a class="mobileFooterIcons" href=""><img src="../assets/img/instagram2.png" alt="..." width="30px"></a>
+                  <a class="mobileFooterIcons" href=""><img src="../assets/img/twitter.png" alt="..." width="30px"></a>
+                </div>
+                <p class="mb-0 text-center">© 2022 Salon Jardín la Finca. Todos los derechos reservados.</p>
         </div>
-        <div class="footerDerechos">
-            <p> Salón jardín la finca 2022 ©, Todos los derechos reservados</p>
-        </div>  
-        <div class="footerImgUrl">
-            <ul>
-                <li class="locationIcon"><a href="https://www.google.com/maps/dir//Salon+Jardin+la+Finca+Av+Ursulo+Galv%C3%A1n,+20+de+Noviembre+%26+Tarimoya+91855+Veracruz,+Ver./@19.1977972,-96.1810963,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85c3446930048ff7:0x72ec23c04add27f9!2m2!1d-96.1810963!2d19.1977972" target="_blank"><img src="../assets/img/location2.png" alt="locationIcon"></a></li>
-                <li class="whatsappIcon"><a href="https://wa.me/522292500733" target="_blank"><img src="../assets/img/whatsapp.png" alt="phoneIcon"></a></li>
-                <li class="mailIcon"><a href="https://office.live.com/start/Outlook.aspx?omkt=es-CL" target="_blank"><img src="../assets/img/mail2.png" alt="mailIcon"></a></li>
-                <li class="facebookIcon"><a href="https://www.facebook.com/salonjardinlafinca" target="_blank"><img  src="../assets/img/facebook2.png" alt="facebookFooter"></a> </li>
-                <li class="instagramIcon"><a href="https://www.instagram.com/jardin_la_finca/" target="_blank"><img src="../assets/img/instagram2.png" alt="instagramFooter"></a></li>
-                <li class="twitterIcon"><a href="https://twitter.com/Salonjardin_ver" target="_blank"><img src="../assets/img/twitter.png" alt="twitterFooter"></a></li>
-            </ul>
-        </div>      
-    </footer>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
