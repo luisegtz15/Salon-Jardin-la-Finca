@@ -33,3 +33,21 @@ footer a{
     border: 2px solid white;
     background-color: white;
 }
+.googleReview{
+    height: 390px;
+}
+@media (min-width: 576px){
+    .googleReview{
+        height: 320px;
+    }
+}
+@media (min-width: 768px){
+    .googleReview{
+        height: 290px;
+    }
+}
+@media (min-width: 1200px){
+    .googleReview{
+        height: 320px;
+    }
+}
