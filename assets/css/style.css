@@ -85,6 +85,20 @@ nav{
 .mobileList a:hover{
     color: #8a3d30;
 }
+.botones{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #212529;
+    color: white;
+    border: 0;
+    background-color: #212529;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.botones:active{
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
 footer{
     color: white;
     background-color: #212529;
@@ -116,22 +130,24 @@ footer a{
     border: 2px solid white;
     background-color: white;
 }
-.googleReview{
-    height: 390px;
+.googleReviews{
+    height: 350px;
+    background-color: #212529;
+    color: white;
 }
 @media screen and (min-width: 576px){
-    .googleReview{
-        height: 320px;
+    .googleReviews{
+        height: 300px;
     }
 }
 @media screen and (min-width: 768px){
-    .googleReview{
-        height: 290px;
+    .googleReviews{
+        height: 250px;
     }
 }
 @media screen and (min-width: 1200px){
-    .googleReview{
-        height: 320px;
+    .googleReviews{
+        height: 300px;
     }
 }
 .contactMesage{
