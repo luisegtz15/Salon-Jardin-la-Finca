@@ -1,0 +1,17 @@
+.contactContainer{
+    border-radius: 20px;
+}
+.contactMesage{
+    resize: none;
+}
+.contactIcon{
+    margin: 15px 10px;
+    i{
+        font-size: 35px;
+        color: #212529;
+        &:hover{
+            color: #e77224;
+            transform: scale(110%);
+        }
+    }
+}

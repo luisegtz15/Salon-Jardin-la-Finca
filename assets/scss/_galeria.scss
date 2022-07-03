@@ -1,0 +1,23 @@
+.carouselGaleriaXl{
+    width: 33.3%;
+}
+.googleReviews{
+    height: 350px;
+    background-color: #212529;
+    color: white;
+}
+@media screen and (min-width: 576px){
+    .googleReviews{
+        height: 300px;
+    }
+}
+@media screen and (min-width: 768px){
+    .googleReviews{
+        height: 250px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .googleReviews{
+        height: 300px;
+    }
+}

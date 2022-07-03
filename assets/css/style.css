@@ -1,184 +1,193 @@
-*{
-    box-sizing: content-box;
-    box-sizing: border-box;
+nav {
+  z-index: 10;
+  position: relative;
+  background-color: #212529;
 }
-nav{
-    z-index: 10;
-    position: relative;
-    background-color: #212529;
+nav .navbarLogo {
+  position: relative;
+  padding: 10px 20px;
 }
-.navbarLogo{
-    position: relative;
-    padding: 10px 20px;
+nav .navbarLogo img {
+  width: 90px;
 }
-.navbarLogo img{
-    width: 90px;
+nav .desktopList {
+  width: 100%;
+  margin: 0;
+  margin-left: -130px;
+  padding: 0;
 }
-.desktopList{
-    width: 100%;
-    margin: 0;
-    margin-left: -130px;
-    padding: 0;
+nav .desktopList li {
+  list-style: none;
+  padding: 10px 20px;
 }
-.desktopList li{
-    list-style: none;
-    padding: 10px 20px;
+nav .desktopList li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
 }
-.desktopList a{
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
+nav .desktopList li a:hover {
+  color: #e77224;
 }
-.desktopList a:hover{
-    color: #8a3d30;
+nav .burgerOpen {
+  color: white;
+  font-size: 30px;
+  margin: 10px 30px;
+  cursor: pointer;
 }
-.navBurger{
-    color: white;
-    font-size: 30px;
-    margin: 10px 30px;
-    cursor: pointer;
+nav .navCheckbox:checked ~ .burgerContainer {
+  left: 0%;
 }
-.burgerContainer{
-    position: fixed;
-    transition: left .5s;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    background-color: #212529;
-    display: flex;
-    flex-direction: column;  
+nav .burgerContainer {
+  position: fixed;
+  transition: left 0.5s;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #212529;
+  display: flex;
+  flex-direction: column;
 }
-.navCheckbox:checked ~ .burgerContainer{
-    left: 0%;
+nav .burgerContainer .burgerClose {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  margin: 20px 30px;
+  cursor: pointer;
 }
-.navExit{
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 40px;
-    margin: 20px 30px;
-    cursor: pointer;
+nav .burgerContainer .mobileList {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.mobileList{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+nav .burgerContainer .mobileList li {
+  padding: 30px 0;
 }
-.mobileList li{
-    padding: 30px 0;
+nav .burgerContainer .mobileList li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
-.mobileList a{
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+nav .burgerContainer .mobileList li a:hover {
+  color: #e77224;
 }
-.mobileList a:hover{
-    color: #8a3d30;
+
+* {
+  box-sizing: content-box;
+  box-sizing: border-box;
 }
-.shadows{
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+
+.shadows {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
-.botones{
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #212529;
-    color: white;
-    border: 0;
-    background-color: #212529;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+
+.botones {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #212529;
+  color: white;
+  border: 0;
+  background-color: #212529;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
-.botones:active{
-    transform: translateY(5px);
-    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+.botones:active {
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
-.contactContainer{
-    border-radius: 20px;
+
+.carouselGaleriaXl {
+  width: 33.3%;
 }
-footer{
-    color: white;
-    background-color: #212529;
+
+.googleReviews {
+  height: 350px;
+  background-color: #212529;
+  color: white;
 }
-footer a{
-    width: 30px;
+
+@media screen and (min-width: 576px) {
+  .googleReviews {
+    height: 300px;
+  }
 }
-.contactFooterIcons{
-    margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .googleReviews {
+    height: 250px;
+  }
 }
-.contactFooterIcons i{
-    font-size: 25px;
-    color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .googleReviews {
+    height: 300px;
+  }
 }
-.contactFooterIcons i:hover{
-    color: #e77224;
-    transform: scale(110%);
+.contactContainer {
+  border-radius: 20px;
 }
-.socialMediaFooterIcons{
-    margin: 0 20px;
+
+.contactMesage {
+  resize: none;
 }
-.socialMediaFooterIcons i{
-    font-size: 25px;
-    color: #ffffff;
+
+.contactIcon {
+  margin: 15px 10px;
 }
-.socialMediaFooterIcons i:hover{
-    color: #e77224;
-    transform: scale(110%);
+.contactIcon i {
+  font-size: 35px;
+  color: #212529;
 }
-.mobileFooterIcons{
-    margin: 0 10px;
+.contactIcon i:hover {
+  color: #e77224;
+  transform: scale(110%);
 }
-.mobileFooterIcons i{
-    font-size: 20px;
-    color: #ffffff;
+
+footer {
+  color: white;
+  background-color: #212529;
 }
-.mobileFooterIcons i:hover{
-    color: #e77224;
-    transform: scale(110%);
+footer a {
+  width: 30px;
 }
-.googleReviews{
-    height: 350px;
-    background-color: #212529;
-    color: white;
+footer .desktopFooterIcons-1 {
+  margin-right: 10px;
 }
-@media screen and (min-width: 576px){
-    .googleReviews{
-        height: 300px;
-    }
+footer .desktopFooterIcons-1 i {
+  font-size: 25px;
+  color: #ffffff;
 }
-@media screen and (min-width: 768px){
-    .googleReviews{
-        height: 250px;
-    }
+footer .desktopFooterIcons-1 i:hover {
+  color: #e77224;
+  transform: scale(110%);
 }
-@media screen and (min-width: 1200px){
-    .googleReviews{
-        height: 300px;
-    }
+footer .desktopFooterIcons-2 {
+  margin: 0 20px;
 }
-.contactMesage{
-    resize: none;
+footer .desktopFooterIcons-2 i {
+  font-size: 25px;
+  color: #ffffff;
 }
-.contactIcon{
-    margin: 15px 10px;
+footer .desktopFooterIcons-2 i:hover {
+  color: #e77224;
+  transform: scale(110%);
 }
-.contactIcon i{
-    font-size: 35px;
-    color: #212529;
+footer .mobileFooterIcons {
+  margin: 0 10px;
 }
-.contactIcon i:hover{
-    color: #e77224;
-    transform: scale(110%);
+footer .mobileFooterIcons i {
+  font-size: 25px;
+  color: #ffffff;
 }
-.itemsCarouselXl{
-    width: 33.3%;
-}
+footer .mobileFooterIcons i:hover {
+  color: #e77224;
+  transform: scale(110%);
+}/*# sourceMappingURL=style.css.map */
