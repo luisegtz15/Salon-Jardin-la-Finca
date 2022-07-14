@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
   <nav class="d-flex align-items-center justify-content-between">
@@ -35,56 +38,84 @@
       </div>
     </div>
   </nav>
-    <header class="mt-0 mt-xl-5">
-      <div class="row-fluid d-flex justify-content-center">
-            <div id="carousel1" class="carousel slide col-12 col-xl-9 shadows" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/img/finca1.jpg" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/finca2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/finca4.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-      </div>
-    </header>
     <main>
-        <h1 class="text-center my-5">¡Conócenos!</h1>
-        <div class="row-fluid d-flex flex-column flex-xl-row justify-content-center align-items-center">
-            <p class="col-11 order-1 mb-5 col-xl-5 ms-xl-5 mb-xl-0 order-xl-2">
-                Previo a tu boda, a tus quince años o algún evento importante que
-                estás por realizar, los sueños empiezan a surgir. Nosotros nos
-                encargamos de que se vuelvan realidad. El lugar es importante:
-                donde se respire la naturaleza y esté lleno de espaciosplacenteros,
-                con dimensión suficiente e instalaciones cómodas y estéticas. Donde
-                el día y la noche terminen y comiencen como reflejos de esos sueños
-                a cada momento. Un lugar que produzca a cada instante sonrisas y
-                alegrías en todos sus visitantes. Donde las luces de los jardines y
-                arboles asombren a cada momento. Ese lugar es aquí…tu salón de
-                eventos preferido: el <strong>Salón Jardín la Finca</strong>.
-            </p>
-            <div class="col-11 order-2 col-md-9 col-xl-5 order-xl-1">
-              <div class="ratio ratio-16x9 shadows">
-                  <iframe src="https://www.youtube.com/embed/o9wrlGXB4c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-          </div> 
+      <div class="row-fluid d-flex justify-content-center indexHeader mt-5">
+        <div class="col-11 row-fluid d-flex justify-content-end">
+          <img class="col-8" src="./assets/img/finca2.jpg" alt="">
+        </div>
+        <div class="col-11 indexText">
+            <h1>¡Haz tu evento realidad!</h1>
+            <p>Previo a tu boda, a tus quince años o algún evento importante que estás por realizar, los sueños empiezan a surgir. Nosotros nos encargamos de que se vuelvan realidad.</p>
+        </div>
+        <div class="col-8 indexReservar shadows">
+          <fieldset>
+            <form action="datos-contacto" method="post" class="d-flex justify-content-center align-items-center">
+              <div class="mx-3 my-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mx-3 my-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@hotmail.com" required>
+            </div>
+                <div class="mx-3 my-3">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="mx-3 my-3">
+                    <label for="personas" class="form-label">Personas</label>
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option disabled selected>Seleccione una cantidad</option>
+                        <option value="50">0 - 50 personas</option>
+                        <option value="100">50 - 100 personas</option>
+                        <option value="150">100 - 150 personas</option>
+                        <option value="300">150 - 300 personas</option>
+                      </select>
+                </div>
+                <div class="mx-3 my-3 text-center btnReservar">
+                    <button style="width: 150px;" type="submit" class="botones">Reservar</button>
+                </div>
+            </form> 
+        </fieldset>
+        </div>
+      </div>
+      <div class="row-fluid indexBeneficios d-flex justify-content-center">
+        <div class="d-flex flex-column text-center">
+          <i class="fa-solid fa-credit-card"></i>
+          <h3>Se aceptan tarjetas de crédito y débito</h3>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <i class="fa-solid fa-wifi"></i>
+          <h3>Conexión a Wi-fi</h3>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <i class="fa-solid fa-building-shield"></i>
+          <h3>Salón seguro y resguardado</h3>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <i class="fa-solid fa-person-swimming"></i>
+          <h3>Piscina accesible para los clientes</h3>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <i class="fa-solid fa-utensils"></i>
+          <h3>Banquetes incluidos</h3>
+        </div>
+      </div>
+      <div class="row-fluid d-flex align-items-center indexMainContent">
+        <div class="col-6 row-fluid d-flex justify-content-center">
+          <div class="col-11 col-md-9 my-5 shadows video">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/nsDktgtzV80?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 row-fluid d-flex justify-content-center">
+          <div class="col-10 mainText shadows">
+            <h2>Salon Jardin la Finca</h2>
+            <p class="my-5">El lugar es importante: donde se respire la naturaleza y esté lleno de espacios placenteros, con dimensión suficiente e instalaciones cómodas y estéticas. Donde el día y la noche terminen y comiencen como reflejos de esos sueños a cada momento. Un lugar que produzca a cada instante sonrisas y alegrías en todos sus visitantes. Donde las luces de los jardines y árboles asombren a cada momento. Ese lugar es aquí… tu salón de eventos preferido, <strong>Salón Jardín la Finca.</strong> </p>
+          </div>
+        </div> 
+      </div>
     </main>
     <footer>
       <!-- Footer >= 1200px -->

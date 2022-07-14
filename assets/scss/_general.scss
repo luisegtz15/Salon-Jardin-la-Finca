@@ -1,6 +1,8 @@
 *{
     box-sizing: content-box;
     box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 .shadows{
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -13,7 +15,6 @@
     color: white;
     border: 0;
     background-color: #212529;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     &:active{
         transform: translateY(5px);
         box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);

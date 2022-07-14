@@ -19,6 +19,8 @@ nav .desktopList {
 nav .desktopList li {
   list-style: none;
   padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 10px;
 }
 nav .desktopList li a {
   font-size: 20px;
@@ -85,6 +87,8 @@ nav .burgerContainer .mobileList li a:hover {
 * {
   box-sizing: content-box;
   box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .shadows {
@@ -99,11 +103,100 @@ nav .burgerContainer .mobileList li a:hover {
   color: white;
   border: 0;
   background-color: #212529;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .botones:active {
   transform: translateY(5px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.indexHeader {
+  position: relative;
+  border-radius: 20px;
+}
+.indexHeader .indexText {
+  position: absolute;
+  height: 100%;
+  border-radius: 20px;
+  background: rgb(43, 205, 209);
+  background: linear-gradient(90deg, rgb(209, 132, 43) 0%, rgb(214, 36, 81) 36%, rgba(156, 6, 43, 0.377) 54%, rgba(255, 255, 255, 0) 100%);
+}
+.indexHeader .indexText h1 {
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  width: 34%;
+  font-size: 65px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  transform: translate(0%, -50%);
+}
+.indexHeader .indexText p {
+  color: white;
+  width: 34%;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+}
+.indexHeader img {
+  position: relative;
+  right: 0;
+  border-radius: 20px;
+}
+.indexHeader .indexReservar {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.indexHeader .indexReservar button {
+  margin-top: 30px;
+}
+
+.indexBeneficios {
+  margin-top: 100px;
+}
+.indexBeneficios div {
+  margin: 0 30px;
+  width: 220px;
+}
+.indexBeneficios div i {
+  color: #e77224;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.indexBeneficios div h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+}
+
+.indexMainContent {
+  margin-top: 100px;
+  background-color: rgba(235, 171, 134, 0.1176470588);
+  color: black;
+}
+.indexMainContent .mainText {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+.indexMainContent h2 {
+  width: 100%;
+  text-align: center;
+  color: #e77224;
+  font-size: 45px;
+  text-decoration: underline;
+}
+.indexMainContent p {
+  font-size: 18px;
+}
+.indexMainContent .video {
+  overflow: hidden;
+  border-radius: 30px;
 }
 
 .carouselGaleriaXl {
