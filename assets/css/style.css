@@ -1,3 +1,38 @@
+.icon, .iconTwitter, .iconInstagram, .iconFacebook, .iconMail, .iconWhatsapp, .iconLocation {
+  font-size: 25px;
+  color: white;
+}
+
+.iconLocation:hover {
+  color: #c26b7e;
+  transform: scale(110%);
+}
+
+.iconWhatsapp:hover {
+  color: #4ac92a;
+  transform: scale(110%);
+}
+
+.iconMail:hover {
+  color: #b8b8d3;
+  transform: scale(110%);
+}
+
+.iconFacebook:hover {
+  color: #7474ec;
+  transform: scale(110%);
+}
+
+.iconInstagram:hover {
+  color: #a71e84;
+  transform: scale(110%);
+}
+
+.iconTwitter:hover {
+  color: #6fbdc7;
+  transform: scale(110%);
+}
+
 nav {
   z-index: 10;
   position: relative;
@@ -249,29 +284,13 @@ footer {
   background-color: #212529;
 }
 footer a {
-  width: 30px;
+  width: 40px;
 }
 footer .desktopFooterIcons-1 {
-  margin-right: 10px;
-}
-footer .desktopFooterIcons-1 i {
-  font-size: 25px;
-  color: #ffffff;
-}
-footer .desktopFooterIcons-1 i:hover {
-  color: #e77224;
-  transform: scale(110%);
+  margin-right: 0px;
 }
 footer .desktopFooterIcons-2 {
-  margin: 0 20px;
-}
-footer .desktopFooterIcons-2 i {
-  font-size: 25px;
-  color: #ffffff;
-}
-footer .desktopFooterIcons-2 i:hover {
-  color: #e77224;
-  transform: scale(110%);
+  margin: 20px;
 }
 footer .mobileFooterIcons {
   margin: 0 10px;

@@ -1,0 +1,35 @@
+$colores:(
+    Location:#c26b7e,
+    Whatsapp:#4ac92a,
+    Mail:#b8b8d3,
+    Facebook:#7474ec,
+    Instagram:#a71e84,
+    Twitter:#6fbdc7
+    
+);
+
+@mixin propiedades ($color, $size, $margenInferior){
+    color: $color;
+    font-size: $size;
+    margin-bottom: $margenInferior;
+}
+
+$icon:(
+    fuente:25px,
+    colornormal: white,
+);
+
+.icon{
+    font-size: map-get($icon , fuente );
+    color: map-get($icon , colornormal );
+}
+
+@each $key, $var in $colores {
+    .icon#{$key}{
+        @extend .icon;
+        &:hover{
+            color: $var;
+            transform: scale(110%);
+        }
+    }
+}

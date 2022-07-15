@@ -50,9 +50,7 @@
         margin: 0 30px;
         width: 220px;
         i{
-            color: #e77224;
-            font-size: 60px;
-            margin-bottom: 30px;
+            @include propiedades(#e77224,60px,30px)
         }
         h3{
             font-family: 'Work Sans', sans-serif;

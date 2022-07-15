@@ -2,29 +2,13 @@ footer{
     color: white;
     background-color: #212529;
     a{
-        width: 30px;
+        width: 40px;
     }
     .desktopFooterIcons-1{
-        margin-right: 10px;
-        i{
-            font-size: 25px;
-            color: #ffffff;
-            &:hover{
-                color: #e77224;
-                transform: scale(110%);
-            }
-        }
+        margin-right: 0px;
     }
     .desktopFooterIcons-2{
-        margin: 0 20px;
-        i{
-            font-size: 25px;
-            color: #ffffff;
-            &:hover{
-                color: #e77224;
-                transform: scale(110%);
-            }
-        }
+        margin: 20px;
     }
     .mobileFooterIcons{
         margin: 0 10px;
@@ -38,3 +22,5 @@ footer{
         }
     }
 }
+
+
