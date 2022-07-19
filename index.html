@@ -41,30 +41,30 @@
     </div>
   </nav>
     <main>
-      <div class="row-fluid d-flex justify-content-center indexHeader mt-5">
-        <div class="col-11 row-fluid d-flex justify-content-end">
-          <img class="col-8" src="./assets/img/finca2.jpg" alt="piscina background">
+      <div class="row-fluid d-flex justify-content-center indexHeader mt-md-5">
+        <div class="col-12 col-xl-11 row-fluid d-flex justify-content-end">
+          <img class="col-12 col-xl-8" src="./assets/img/finca2.jpg" alt="piscina background">
         </div>
-        <div class="col-11 indexText">
+        <div class="col-12 col-xl-11 indexText">
             <h1>¡Haz tu evento realidad!</h1>
             <p>Previo a tu boda, a tus quince años o algún evento importante que estás por realizar, los sueños empiezan a surgir. Nosotros nos encargamos de que se vuelvan realidad.</p>
         </div>
-        <div class="col-8 indexReservar shadows">
+        <div class="d-none d-md-flex justify-content-center col-md-11 col-xl-9 indexReservar shadows">
           <fieldset>
-            <form action="datos-contacto" method="post" class="d-flex justify-content-center align-items-center">
-              <div class="mx-3 my-3">
+            <form action="datos-contacto" method="post" class="d-flex justify-content-center align-items-center flex-wrap py-3">
+              <div class="mx-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" required>
             </div>
-            <div class="mx-3 my-3">
-                <label for="email" class="form-label">Correo electrónico</label>
+            <div class="mx-3">
+                <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" placeholder="nombre@hotmail.com" required>
             </div>
-                <div class="mx-3 my-3">
+                <div class="mx-3">
                     <label for="fecha" class="form-label">Fecha</label>
                     <input type="date" class="form-control" id="fecha" required>
                 </div>
-                <div class="mx-3 my-3">
+                <div class="mx-3">
                     <label for="personas" class="form-label">Personas</label>
                     <select class="form-select" aria-label="Default select example" required>
                         <option disabled selected>Seleccione una cantidad</option>
@@ -74,49 +74,89 @@
                         <option value="300">150 - 300 personas</option>
                       </select>
                 </div>
-                <div class="mx-3 my-3 text-center btnReservar">
+                <div class="mx-3 text-center btnReservar">
                     <button style="width: 150px;" type="submit" class="botones">Reservar</button>
                 </div>
             </form> 
         </fieldset>
         </div>
       </div>
-      <div class="row-fluid indexBeneficios d-flex justify-content-center">
-        <div class="d-flex flex-column text-center">
+      <div class="row-fluid reservacionContainer d-flex d-md-none">
+        <input class="d-none reservaCheckbox" type="checkbox" name="" id="reservaBurger">
+        <label for="reservaBurger" class="col-11">
+          <div class="text-center reservarTextContainer shadows">
+            <p class="mb-0 text-muted">¿Qué día te gustaría reservar?</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </label>
+        <div class="indexReservarMobile w-100">
+          <label class="reservaClose" for="reservaBurger"><i class="fa-solid fa-xmark"></i></label>
+          <h2 class="text-center">Ingresa tus datos para hacer tu reservación</h2>
+            <form action="reservacion" method="post" class="d-flex flex-column justify-content-center align-items-center flex-wrap py-3 row">
+              <div class="my-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="my-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@hotmail.com" required>
+            </div>
+                <div class="my-3">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="my-3">
+                    <label for="personas" class="form-label">Personas</label>
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option disabled selected>Seleccione una cantidad</option>
+                        <option value="50">0 - 50 personas</option>
+                        <option value="100">50 - 100 personas</option>
+                        <option value="150">100 - 150 personas</option>
+                        <option value="300">150 - 300 personas</option>
+                      </select>
+                </div>
+                <div class="my-3 text-center btnReservar">
+                    <button style="width: 150px;" type="submit" class="botones">Reservar</button>
+                </div>
+            </form>
+        </div>
+      </div>
+      <div class="row-fluid indexBeneficios d-flex justify-content-center align-items-start flex-wrap flex-md-nowrap">
+        <div class="d-flex flex-column text-center mx-3 mb-4 mb-md-0">
           <i class="fa-solid fa-credit-card"></i>
           <h3>Se aceptan tarjetas de crédito y débito</h3>
         </div>
-        <div class="d-flex flex-column text-center">
+        <div class="d-flex flex-column text-center mx-3 mb-4 mb-md-0">
           <i class="fa-solid fa-wifi"></i>
           <h3>Conexión a Wi-fi</h3>
         </div>
-        <div class="d-flex flex-column text-center">
+        <div class="d-flex flex-column text-center mx-3 mb-4 mb-md-0">
           <i class="fa-solid fa-building-shield"></i>
           <h3>Salón seguro y resguardado</h3>
         </div>
-        <div class="d-flex flex-column text-center">
+        <div class="d-flex flex-column text-center mx-3 mb-4 mb-md-0">
           <i class="fa-solid fa-person-swimming"></i>
           <h3>Piscina accesible para los clientes</h3>
         </div>
-        <div class="d-flex flex-column text-center">
+        <div class="d-flex flex-column text-center mx-3">
           <i class="fa-solid fa-utensils"></i>
           <h3>Banquetes incluidos</h3>
         </div>
       </div>
-      <div class="row-fluid d-flex align-items-center indexMainContent">
-        <div class="col-6 row-fluid d-flex justify-content-center">
-          <div class="col-11 col-md-9 my-5 shadows video">
+      <div class="row-fluid d-flex flex-column flex-xl-row align-items-center indexMainContent">
+        <div class="col-11 col-xl-6 row-fluid d-flex justify-content-center py-5">
+          <div class="col-xl-10 mainText shadows">
+            <h2>Salon Jardin la Finca</h2>
+            <p class="my-5">El lugar es importante: donde se respire la naturaleza y esté lleno de espacios placenteros, con dimensión suficiente e instalaciones cómodas y estéticas. Donde el día y la noche terminen y comiencen como reflejos de esos sueños a cada momento. Un lugar que produzca a cada instante sonrisas y alegrías en todos sus visitantes. Donde las luces de los jardines y árboles asombren a cada momento. Ese lugar es aquí… tu salón de eventos preferido, <strong>Salón Jardín la Finca.</strong> </p>
+          </div>
+        </div> 
+        <div class="col-12 col-xl-6 row-fluid d-flex justify-content-center">
+          <div class="col-11 col-md-10 col-xl-10 my-5 shadows video">
             <div class="ratio ratio-16x9">
               <iframe src="https://www.youtube.com/embed/nsDktgtzV80?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-        <div class="col-6 row-fluid d-flex justify-content-center">
-          <div class="col-10 mainText shadows">
-            <h2>Salon Jardin la Finca</h2>
-            <p class="my-5">El lugar es importante: donde se respire la naturaleza y esté lleno de espacios placenteros, con dimensión suficiente e instalaciones cómodas y estéticas. Donde el día y la noche terminen y comiencen como reflejos de esos sueños a cada momento. Un lugar que produzca a cada instante sonrisas y alegrías en todos sus visitantes. Donde las luces de los jardines y árboles asombren a cada momento. Ese lugar es aquí… tu salón de eventos preferido, <strong>Salón Jardín la Finca.</strong> </p>
-          </div>
-        </div> 
       </div>
     </main>
     <footer>

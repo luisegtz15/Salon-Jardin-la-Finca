@@ -4,33 +4,72 @@
     .indexText{
         position: absolute;
         height: 100%;
-        border-radius: 20px;
-        background: rgb(43,205,209);
-        background: linear-gradient(90deg, rgb(209, 132, 43) 0%, rgb(214, 36, 81) 36%, rgba(156, 6, 43, 0.377) 54%, rgba(255,255,255,0) 100%);
+        border-radius: 0px;
         h1{
-            font-family: 'Work Sans', sans-serif;
+            text-align: center;
             color: white;
-            width: 34%;
-            font-size: 65px;
+            width: 100%;
             position: absolute;
-            top: 20%;
-            left: 5%;
-            transform: translate(0%, -50%);
+            top: 18%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         p{
             color: white;
-            width: 34%;
-            font-size: 20px;
+            width: 90%;
             position: absolute;
-            top: 50%;
-            left: 5%;
-            transform: translate(0%, -50%);
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
+        background: linear-gradient(90deg, rgb(209, 132, 43) 0%, rgb(214, 36, 81) 36%, rgba(156, 6, 43, 0.377) 54%, rgba(255,255,255,0) 100%);
+        @media screen and (min-width: 768px){
+            border-radius: 20px;
+            h1{
+                text-align: start;
+                color: white;
+                width: 50%;
+                position: absolute;
+                top: 18%;
+                left: 5%;
+                transform: translate(0%, -50%);
+            }
+            p{
+                color: white;
+                width: 45%;
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                transform: translate(0%, -50%);
+            }
+        }
+        @media screen and (min-width: 1300px){
+            h1{
+                color: white;
+                width: 34%;
+                position: absolute;
+                top: 20%;
+                left: 5%;
+                transform: translate(0%, -50%);
+            }
+            p{
+                color: white;
+                width: 34%;
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                transform: translate(0%, -50%);
+            }
+        }
+
     }
     img{
         position: relative;
         right: 0;
-        border-radius: 20px;
+        border-radius: 0px;
+        @media screen and (min-width: 768px){
+            border-radius: 20px;    
+        }
     }
     .indexReservar{
         position: absolute;
@@ -45,21 +84,26 @@
     }
 }
 .indexBeneficios{
-    margin-top: 100px;
+    margin-top: 50px;
+    @media screen and (min-width: 768px){
+        margin-top: 140px;
+    }
     div{
-        margin: 0 30px;
-        width: 220px;
-        i{
-            @include propiedades(#e77224,60px,30px)
+        width: 40%;
+        @media screen and (min-width: 768px){
+            width: 220px;
         }
-        h3{
-            font-family: 'Work Sans', sans-serif;
-            font-size: 24px;
+        i{
+            @include propiedades(#e77224,50px,30px);
+            @media screen and (min-width: 768px){
+                @include propiedades(#e77224,60px,30px);
+            }
+            
         }
     }
 }
 .indexMainContent{
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: #ebab861e;
     color: black;
     .mainText{
@@ -72,14 +116,65 @@
         width: 100%;
         text-align: center;
         color: #e77224;
-        font-size: 45px;
-        text-decoration: underline;
-    }
-    p{
-        font-size: 18px;
     }
     .video{
         overflow: hidden;
         border-radius: 30px;
     }
+}
+
+.reservacionContainer{
+    display: flex;
+    justify-content: center;
+    .reservarTextContainer{
+        padding: 15px 0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        p{
+            width: 70%;
+            border-radius: 5px;
+            border: 2px solid rgb(211, 211, 211);
+        }
+        i{
+            margin-left: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(211, 211, 211);
+            color: white;
+            background-color: #e77224;
+            padding: 5px;
+        }
+    }
+    .indexReservarMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: white;
+        z-index: 11;
+        transition: bottom .5s;
+        bottom: -100%;
+        left: 0%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        form{
+            width: 80%;
+        }
+        .reservaClose{
+            cursor: pointer;
+            position: absolute;
+            font-size: 35px;
+            top: 5%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .reservaCheckbox:checked ~ .indexReservarMobile{
+        bottom: 0;
+    }
+
 }
