@@ -366,9 +366,3 @@ footer {
     margin: 20px; }
   footer .mobileFooterIcons {
     margin: 0 10px; }
-    footer .mobileFooterIcons i {
-      font-size: 25px;
-      color: #ffffff; }
-      footer .mobileFooterIcons i:hover {
-        color: #e77224;
-        transform: scale(110%); }
