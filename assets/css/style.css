@@ -1,194 +1,155 @@
-.icon, .iconTwitter, .iconInstagram, .iconFacebook, .iconMail, .iconWhatsapp, .iconLocation {
+.icon, .iconLocation, .iconWhatsapp, .iconMail, .iconFacebook, .iconInstagram, .iconTwitter {
   font-size: 25px;
-  color: white;
-}
+  color: white; }
 
 .iconLocation:hover {
   color: #c26b7e;
-  transform: scale(110%);
-}
+  transform: scale(110%); }
 
 .iconWhatsapp:hover {
   color: #4ac92a;
-  transform: scale(110%);
-}
+  transform: scale(110%); }
 
 .iconMail:hover {
   color: #b8b8d3;
-  transform: scale(110%);
-}
+  transform: scale(110%); }
 
 .iconFacebook:hover {
   color: #7474ec;
-  transform: scale(110%);
-}
+  transform: scale(110%); }
 
 .iconInstagram:hover {
   color: #a71e84;
-  transform: scale(110%);
-}
+  transform: scale(110%); }
 
 .iconTwitter:hover {
   color: #6fbdc7;
-  transform: scale(110%);
-}
+  transform: scale(110%); }
 
 nav {
   z-index: 10;
   position: relative;
-  background-color: #212529;
-}
-nav .navbarLogo {
-  position: relative;
-  padding: 10px 20px;
-}
-nav .navbarLogo img {
-  width: 90px;
-}
-nav .desktopList {
-  width: 100%;
-  margin: 0;
-  margin-left: -130px;
-  padding: 0;
-}
-nav .desktopList li {
-  list-style: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: 0 10px;
-}
-nav .desktopList li a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-}
-nav .desktopList li a:hover {
-  color: #e77224;
-}
-nav .burgerOpen {
-  color: white;
-  font-size: 30px;
-  margin: 10px 30px;
-  cursor: pointer;
-}
-nav .navCheckbox:checked ~ .burgerContainer {
-  left: 0%;
-}
-nav .burgerContainer {
-  position: fixed;
-  transition: left 0.5s;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  background-color: #212529;
-  display: flex;
-  flex-direction: column;
-}
-nav .burgerContainer .burgerClose {
-  color: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 40px;
-  margin: 20px 30px;
-  cursor: pointer;
-}
-nav .burgerContainer .mobileList {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-nav .burgerContainer .mobileList li {
-  padding: 30px 0;
-}
-nav .burgerContainer .mobileList li a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-nav .burgerContainer .mobileList li a:hover {
-  color: #e77224;
-}
+  background-color: #212529; }
+  nav .navbarLogo {
+    position: relative;
+    padding: 10px 20px; }
+    nav .navbarLogo img {
+      width: 90px; }
+  nav .desktopList {
+    width: 100%;
+    margin: 0;
+    margin-left: -130px;
+    padding: 0; }
+    nav .desktopList li {
+      list-style: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 0 10px; }
+      nav .desktopList li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white; }
+        nav .desktopList li a:hover {
+          color: #e77224; }
+  nav .burgerOpen {
+    color: white;
+    font-size: 30px;
+    margin: 10px 30px;
+    cursor: pointer; }
+  nav .navCheckbox:checked ~ .burgerContainer {
+    left: 0%; }
+  nav .burgerContainer {
+    position: fixed;
+    transition: left .5s;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #212529;
+    display: flex;
+    flex-direction: column; }
+    nav .burgerContainer .burgerClose {
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 40px;
+      margin: 20px 30px;
+      cursor: pointer; }
+    nav .burgerContainer .mobileList {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      nav .burgerContainer .mobileList li {
+        padding: 30px 0; }
+        nav .burgerContainer .mobileList li a {
+          font-size: 20px;
+          text-decoration: none;
+          color: white;
+          font-weight: bold; }
+          nav .burgerContainer .mobileList li a:hover {
+            color: #e77224; }
 
 * {
   box-sizing: content-box;
   box-sizing: border-box;
-  font-family: "Signika Negative", sans-serif;
-  font-family: "Work Sans", sans-serif;
-}
+  font-family: 'Signika Negative', sans-serif;
+  font-family: 'Work Sans', sans-serif; }
 
 body h1 {
-  font-size: 30px;
-}
+  font-size: 30px; }
+
 body h3 {
-  font-size: 18px;
-}
+  font-size: 18px; }
+
 body h5 {
-  font-size: 18px;
-}
+  font-size: 18px; }
+
 @media screen and (min-width: 576px) {
   body h1 {
-    font-size: 40px;
-  }
-}
+    font-size: 40px; } }
+
 @media screen and (min-width: 768px) {
   body h1 {
-    font-size: 50px;
-  }
+    font-size: 50px; }
   body h2 {
-    font-size: 35x;
-  }
+    font-size: 35x; }
   body h3 {
-    font-size: 20px;
-  }
+    font-size: 20px; }
   body h5 {
-    font-size: 22px;
-  }
+    font-size: 22px; }
   body p {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
+
 @media screen and (min-width: 992px) {
   body h1 {
-    font-size: 55px;
-  }
+    font-size: 55px; }
   body h2 {
-    font-size: 40px;
-  }
+    font-size: 40px; }
   body h3 {
-    font-size: 20px;
-  }
+    font-size: 20px; }
   body p {
-    font-size: 18px;
-  }
-}
+    font-size: 18px; } }
+
 @media screen and (min-width: 1500px) {
   body h1 {
-    font-size: 65px;
-  }
+    font-size: 65px; }
   body h2 {
-    font-size: 45px;
-  }
+    font-size: 45px; }
   body h3 {
-    font-size: 25px;
-  }
+    font-size: 25px; }
   body p {
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }
 
 .shadows {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-}
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .botones {
   text-decoration: none;
@@ -197,273 +158,217 @@ body h5 {
   background-color: #212529;
   color: white;
   border: 0;
-  background-color: #212529;
-}
-.botones:active {
-  transform: translateY(5px);
-  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-}
+  background-color: #212529; }
+  .botones:active {
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25); }
 
 .indexHeader {
   position: relative;
-  border-radius: 20px;
-}
-.indexHeader .indexText {
-  position: absolute;
-  height: 100%;
-  border-radius: 0px;
-  background: linear-gradient(90deg, rgb(209, 132, 43) 0%, rgb(214, 36, 81) 36%, rgba(156, 6, 43, 0.377) 54%, rgba(255, 255, 255, 0) 100%);
-}
-.indexHeader .indexText h1 {
-  text-align: center;
-  color: white;
-  width: 100%;
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.indexHeader .indexText p {
-  color: white;
-  width: 90%;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media screen and (min-width: 768px) {
+  border-radius: 20px; }
   .indexHeader .indexText {
-    border-radius: 20px;
-  }
-  .indexHeader .indexText h1 {
-    text-align: start;
-    color: white;
-    width: 50%;
     position: absolute;
-    top: 18%;
-    left: 5%;
-    transform: translate(0%, -50%);
-  }
-  .indexHeader .indexText p {
-    color: white;
-    width: 45%;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(0%, -50%);
-  }
-}
-@media screen and (min-width: 1300px) {
-  .indexHeader .indexText h1 {
-    color: white;
-    width: 34%;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    transform: translate(0%, -50%);
-  }
-  .indexHeader .indexText p {
-    color: white;
-    width: 34%;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(0%, -50%);
-  }
-}
-.indexHeader img {
-  position: relative;
-  right: 0;
-  border-radius: 0px;
-}
-@media screen and (min-width: 768px) {
+    height: 100%;
+    border-radius: 0px;
+    background: linear-gradient(90deg, #d1842b 0%, #d62451 36%, rgba(156, 6, 43, 0.377) 54%, rgba(255, 255, 255, 0) 100%); }
+    .indexHeader .indexText h1 {
+      text-align: center;
+      color: white;
+      width: 100%;
+      position: absolute;
+      top: 18%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .indexHeader .indexText p {
+      color: white;
+      width: 90%;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    @media screen and (min-width: 768px) {
+      .indexHeader .indexText {
+        border-radius: 20px; }
+        .indexHeader .indexText h1 {
+          text-align: start;
+          color: white;
+          width: 50%;
+          position: absolute;
+          top: 18%;
+          left: 5%;
+          transform: translate(0%, -50%); }
+        .indexHeader .indexText p {
+          color: white;
+          width: 45%;
+          position: absolute;
+          top: 50%;
+          left: 5%;
+          transform: translate(0%, -50%); } }
+    @media screen and (min-width: 1300px) {
+      .indexHeader .indexText h1 {
+        color: white;
+        width: 34%;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        transform: translate(0%, -50%); }
+      .indexHeader .indexText p {
+        color: white;
+        width: 34%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(0%, -50%); } }
   .indexHeader img {
-    border-radius: 20px;
-  }
-}
-.indexHeader .indexReservar {
-  position: absolute;
-  background-color: white;
-  border-radius: 10px;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.indexHeader .indexReservar button {
-  margin-top: 30px;
-}
+    position: relative;
+    right: 0;
+    border-radius: 0px; }
+    @media screen and (min-width: 768px) {
+      .indexHeader img {
+        border-radius: 20px; } }
+  .indexHeader .indexReservar {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .indexHeader .indexReservar button {
+      margin-top: 30px; }
 
 .indexBeneficios {
-  margin-top: 50px;
-}
-@media screen and (min-width: 768px) {
-  .indexBeneficios {
-    margin-top: 140px;
-  }
-}
-.indexBeneficios div {
-  width: 40%;
-}
-@media screen and (min-width: 768px) {
+  margin-top: 50px; }
+  @media screen and (min-width: 768px) {
+    .indexBeneficios {
+      margin-top: 140px; } }
   .indexBeneficios div {
-    width: 220px;
-  }
-}
-.indexBeneficios div i {
-  color: #e77224;
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .indexBeneficios div i {
-    color: #e77224;
-    font-size: 60px;
-    margin-bottom: 30px;
-  }
-}
+    width: 40%; }
+    @media screen and (min-width: 768px) {
+      .indexBeneficios div {
+        width: 220px; } }
+    .indexBeneficios div i {
+      color: #e77224;
+      font-size: 50px;
+      margin-bottom: 30px; }
+      @media screen and (min-width: 768px) {
+        .indexBeneficios div i {
+          color: #e77224;
+          font-size: 60px;
+          margin-bottom: 30px; } }
 
 .indexMainContent {
   margin-top: 50px;
-  background-color: rgba(235, 171, 134, 0.1176470588);
-  color: black;
-}
-.indexMainContent .mainText {
-  position: relative;
-  background-color: white;
-  padding: 30px;
-  border-radius: 30px;
-}
-.indexMainContent h2 {
-  width: 100%;
-  text-align: center;
-  color: #e77224;
-}
-.indexMainContent .video {
-  overflow: hidden;
-  border-radius: 30px;
-}
+  background-color: #ebab861e;
+  color: black; }
+  .indexMainContent .mainText {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px; }
+  .indexMainContent h2 {
+    width: 100%;
+    text-align: center;
+    color: #e77224; }
+  .indexMainContent .video {
+    overflow: hidden;
+    border-radius: 30px; }
 
 .reservacionContainer {
   display: flex;
-  justify-content: center;
-}
-.reservacionContainer .reservarTextContainer {
-  padding: 15px 0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.reservacionContainer .reservarTextContainer p {
-  width: 70%;
-  border-radius: 5px;
-  border: 2px solid rgb(211, 211, 211);
-}
-.reservacionContainer .reservarTextContainer i {
-  margin-left: 10px;
-  font-size: 20px;
-  border-radius: 5px;
-  border: 2px solid rgb(211, 211, 211);
-  color: white;
-  background-color: #e77224;
-  padding: 5px;
-}
-.reservacionContainer .indexReservarMobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  background-color: white;
-  z-index: 11;
-  transition: bottom 0.5s;
-  bottom: -100%;
-  left: 0%;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-}
-.reservacionContainer .indexReservarMobile form {
-  width: 80%;
-}
-.reservacionContainer .indexReservarMobile .reservaClose {
-  cursor: pointer;
-  position: absolute;
-  font-size: 35px;
-  top: 5%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-}
-.reservacionContainer .reservaCheckbox:checked ~ .indexReservarMobile {
-  bottom: 0;
-}
+  justify-content: center; }
+  .reservacionContainer .reservarTextContainer {
+    padding: 15px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .reservacionContainer .reservarTextContainer p {
+      width: 70%;
+      border-radius: 5px;
+      border: 2px solid lightgray; }
+    .reservacionContainer .reservarTextContainer i {
+      margin-left: 10px;
+      font-size: 20px;
+      border-radius: 5px;
+      border: 2px solid lightgray;
+      color: white;
+      background-color: #e77224;
+      padding: 5px; }
+  .reservacionContainer .indexReservarMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    z-index: 11;
+    transition: bottom .5s;
+    bottom: -100%;
+    left: 0%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100); }
+    .reservacionContainer .indexReservarMobile form {
+      width: 80%; }
+    .reservacionContainer .indexReservarMobile .reservaClose {
+      cursor: pointer;
+      position: absolute;
+      font-size: 35px;
+      top: 5%;
+      left: 90%;
+      transform: translate(-50%, -50%); }
+  .reservacionContainer .reservaCheckbox:checked ~ .indexReservarMobile {
+    bottom: 0; }
 
 .carouselGaleriaXl {
-  width: 33.3%;
-}
+  width: 33.3%; }
 
 .googleReviews {
   height: 350px;
   background-color: #212529;
-  color: white;
-}
+  color: white; }
 
 @media screen and (min-width: 576px) {
   .googleReviews {
-    height: 300px;
-  }
-}
+    height: 300px; } }
+
 @media screen and (min-width: 768px) {
   .googleReviews {
-    height: 250px;
-  }
-}
+    height: 250px; } }
+
 @media screen and (min-width: 1200px) {
   .googleReviews {
-    height: 300px;
-  }
-}
+    height: 300px; } }
+
 .contactContainer {
-  border-radius: 20px;
-}
+  border-radius: 20px; }
 
 .contactMesage {
-  resize: none;
-}
+  resize: none; }
 
 .contactIcon {
-  margin: 15px 10px;
-}
-.contactIcon i {
-  font-size: 35px;
-  color: #212529;
-}
-.contactIcon i:hover {
-  color: #e77224;
-  transform: scale(110%);
-}
+  margin: 15px 10px; }
+  .contactIcon i {
+    font-size: 35px;
+    color: #212529; }
+    .contactIcon i:hover {
+      color: #e77224;
+      transform: scale(110%); }
 
 footer {
   color: white;
-  background-color: #212529;
-}
-footer a {
-  width: 40px;
-}
-footer .desktopFooterIcons-1 {
-  margin-right: 0px;
-}
-footer .desktopFooterIcons-2 {
-  margin: 20px;
-}
-footer .mobileFooterIcons {
-  margin: 0 10px;
-}
-footer .mobileFooterIcons i {
-  font-size: 25px;
-  color: #ffffff;
-}
-footer .mobileFooterIcons i:hover {
-  color: #e77224;
-  transform: scale(110%);
-}/*# sourceMappingURL=style.css.map */
+  background-color: #212529; }
+  footer a {
+    width: 40px; }
+  footer .desktopFooterIcons-1 {
+    margin-right: 0px; }
+  footer .desktopFooterIcons-2 {
+    margin: 20px; }
+  footer .mobileFooterIcons {
+    margin: 0 10px; }
+    footer .mobileFooterIcons i {
+      font-size: 25px;
+      color: #ffffff; }
+      footer .mobileFooterIcons i:hover {
+        color: #e77224;
+        transform: scale(110%); }
