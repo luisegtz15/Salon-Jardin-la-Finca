@@ -1,26 +1,10 @@
-.carouselGaleriaXl{
-    width: 33.3%;
-}
-.video{
-    overflow: hidden;
-    border-radius: 30px;
-}
-.googleReviews{
-    height: 350px;
-    background-color: #212529;
-    color: white;
-}
-.cardGaleria{
-    width: 80%;
-    transition: scale, 0.5s;
+.cardPaquetes{
+    width: 90%;
     cursor: pointer;
 }
 @media screen and (min-width: 576px){
-    .googleReviews{
-        height: 300px;
-    }
-    .cardGaleria{
-        width: 45%;
+    .cardPaquetes{
+        width: 70%;
         transition: scale, 0.5s;
         cursor: pointer;
         &:hover{
@@ -29,11 +13,8 @@
     }
 }
 @media screen and (min-width: 768px){
-    .googleReviews{
-        height: 250px;
-    }
-    .cardGaleria{
-        width: 38%;
+    .cardPaquetes{
+        width: 40%;
         transition: scale, 0.5s;
         cursor: pointer;
         &:hover{
@@ -42,11 +23,8 @@
     }
 }
 @media screen and (min-width: 1200px){
-    .googleReviews{
-        height: 320px;
-    }
-    .cardGaleria{
-        width: 28%;
+    .cardPaquetes{
+        width: 22%;
         transition: scale, 0.5s;
         cursor: pointer;
         &:hover{
@@ -54,4 +32,3 @@
         }
     }
 }
-

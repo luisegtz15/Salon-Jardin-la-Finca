@@ -18,11 +18,11 @@
 <body>
   <nav class="d-flex align-items-center justify-content-between">
     <a class="navbarLogo" href="../index.html"><img src="../assets/img/La_Finca_Logo.png" alt=""></a>
-    <ul class="d-none d-lg-flex justify-content-center desktopList ">
+    <ul class="d-none d-lg-flex justify-content-center align-items-center desktopList ">
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="./eventos.html">Eventos</a></li>
       <li><a href="./paquetes-y-servicios.html">Paquetes y servicios</a></li>
-      <li><a href="./galeria.html">Galería</a></li>
+      <li><a class="navActive" href="./galeria.html">Galería</a></li>
       <li><a href="./contacto.html">Contacto</a></li>
     </ul>
     <div class="d-lg-none">
@@ -34,7 +34,7 @@
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="./eventos.html">Eventos</a></li>
           <li><a href="./paquetes-y-servicios.html">Paquetes y servicios</a></li>
-          <li><a href="./galeria.html">Galería</a></li>
+          <li><a class="navActive" href="./galeria.html">Galería</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </div>
@@ -106,7 +106,7 @@
     </header>
     <main class="mt-5">
             <div class="row-fluid d-flex flex-column align-items-center flex-xl-row justify-content-center">
-                <div class="col-11 col-md-9 mb-5 col-xl-5 mb-xl-0 me-xl-5 shadows">
+                <div class="col-11 col-md-9 mb-5 col-xl-5 mb-xl-0 me-xl-5 shadows video">
                     <div class="ratio ratio-16x9">
                         <iframe src="https://www.youtube.com/embed/nsDktgtzV80?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -170,19 +170,19 @@
             </div>
             <h2 class="text-center my-5">¿Qué deseas ver?</h2>
             <div class="d-flex justify-content-evenly flex-wrap">
-                <div class="card mb-5 shadows" style="width: 22rem;">
+                <div class="card mb-5 shadows cardGaleria">
                     <img src="../assets/img/XVs.jpg" class="card-img-top" alt="XVs">
                     <div class="card-body">
                       <h5 class="card-title text-center">XV AÑOS</h5>
                     </div>
                 </div>
-                <div class="card mb-5 shadows" style="width: 22rem;">
+                <div class="card mb-5 shadows cardGaleria">
                     <img src="../assets/img/bodas.jpeg" alt="Bodas" class="card-img-top" alt="Bodas">
                     <div class="card-body">
                       <h5 class="card-title text-center">BODAS</h5>
                     </div>
                 </div>
-                <div class="card mb-5 shadows" style="width: 22rem;">
+                <div class="card mb-5 shadows cardGaleria">
                     <img src="../assets/img/otroseventos.jpg" class="card-img-top" alt="Eventos">
                     <div class="card-body">
                       <h5 class="card-title text-center">EVENTOS VARIOS</h5>
@@ -194,29 +194,29 @@
       <!-- Footer >= 1200px -->
       <div class="row-fluid d-none d-xl-flex mt-5 pt-4 pb-1">
         <div class="col-4">
-            <h5 class="text-center">Contacto</h5>
-            <div class="d-flex align-items-center my-4 ms-4">
+            <h5 class="ms-4">Contacto</h5>
+            <div class="d-flex align-items-center my-3 ms-4">
                 <a class="desktopFooterIcons-1" href="https://www.google.com/maps/dir//Salon+Jardin+la+Finca+Av+Ursulo+Galv%C3%A1n,+20+de+Noviembre+%26+Tarimoya+91855+Veracruz,+Ver./@19.1977972,-96.1810963,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85c3446930048ff7:0x72ec23c04add27f9!2m2!1d-96.1810963!2d19.1977972" target="_blank"><i class="fa-solid fa-location-dot iconLocation"></i></a>
                 <p class="mb-0">Av Ursulo Galván, Col Tarimoya, 91855 - Veracruz, México</p>
             </div>
-            <div class="d-flex align-items-center my-4 ms-4">
+            <div class="d-flex align-items-center my-3 ms-4">
                 <a class="desktopFooterIcons-1" href="https://wa.me/522292500733" target="_blank"><i class="fa-brands fa-whatsapp iconWhatsapp"></i></a>
                 <p class="mb-0">229 250 0733</p>
             </div>
-            <div class="d-flex align-items-center my-4 ms-4">
+            <div class="d-flex align-items-center my-3 ms-4">
                 <a class="desktopFooterIcons-1" href="https://office.live.com/start/Outlook.aspx?omkt=es-CL" target="_blank"><i class="fa-solid fa-envelope iconMail"></i></a>
                 <p class="mb-0">salonjardinlafinca@outlook.com</p>
             </div>
         </div>
         <div class="col-4 d-flex flex-column justify-content-between align-items-center ">
             <div class="mt-3">
-                <a href="../index.html"><img src="../assets/img/La_Finca_Logo.png" alt="La_Finca_Logo" width="80px"></a>
+                <a href="../index.html"><img src="../assets/img/La_Finca_Logo.png" alt="La_Finca_Logo" width="80px" class="footerLogo"></a>
             </div>
             <p class="text-center">© 2022 Salon Jardín la Finca. Todos los derechos reservados.</p>
         </div>
         <div class="col-4">
-            <h5 class="mb-4 text-center">Redes sociales</h5>
-            <div class="d-flex justify-content-center">
+            <h5 class="mb-3 text-end me-4">Redes sociales</h5>
+            <div class="d-flex justify-content-end me-4">
                 <a class="desktopFooterIcons-2" href="https://www.facebook.com/salonjardinlafinca" target="_blank"><i class="fa-brands fa-facebook iconFacebook"></i></a>
                 <a class="desktopFooterIcons-2" href="https://www.instagram.com/jardin_la_finca/" target="_blank"><i class="fa-brands fa-instagram iconInstagram"></i></a>
                 <a class="desktopFooterIcons-2" href="https://twitter.com/Salonjardin_ver" target="_blank"><i class="fa-brands fa-twitter facebook iconTwitter"></i></a>
@@ -229,12 +229,12 @@
                   <a href="../index.html"><img src="../assets/img/La_Finca_Logo.png" alt="La_Finca_Logo" width="80px"></a>
               </div>
               <div class="d-flex justify-content-center flex-wrap my-3">
-                <a class="mobileFooterIcons" href="https://www.google.com/maps/dir//Salon+Jardin+la+Finca+Av+Ursulo+Galv%C3%A1n,+20+de+Noviembre+%26+Tarimoya+91855+Veracruz,+Ver./@19.1977972,-96.1810963,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85c3446930048ff7:0x72ec23c04add27f9!2m2!1d-96.1810963!2d19.1977972" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-                <a class="mobileFooterIcons" href="https://wa.me/522292500733" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a class="mobileFooterIcons" href="https://office.live.com/start/Outlook.aspx?omkt=es-CL" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a class="mobileFooterIcons" href="https://www.facebook.com/salonjardinlafinca" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a class="mobileFooterIcons" href="https://www.instagram.com/jardin_la_finca/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a class="mobileFooterIcons" href="https://twitter.com/Salonjardin_ver" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a class="mobileFooterIcons" href="https://www.google.com/maps/dir//Salon+Jardin+la+Finca+Av+Ursulo+Galv%C3%A1n,+20+de+Noviembre+%26+Tarimoya+91855+Veracruz,+Ver./@19.1977972,-96.1810963,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85c3446930048ff7:0x72ec23c04add27f9!2m2!1d-96.1810963!2d19.1977972" target="_blank"><i class="fa-solid fa-location-dot iconLocation"></i></a>
+                <a class="mobileFooterIcons" href="https://wa.me/522292500733" target="_blank"><i class="fa-brands fa-whatsapp iconWhatsapp"></i></a>
+                <a class="mobileFooterIcons" href="https://office.live.com/start/Outlook.aspx?omkt=es-CL" target="_blank"><i class="fa-solid fa-envelope iconMail"></i></a>
+                <a class="mobileFooterIcons" href="https://www.facebook.com/salonjardinlafinca" target="_blank"><i class="fa-brands fa-facebook iconFacebook"></i></a>
+                <a class="mobileFooterIcons" href="https://www.instagram.com/jardin_la_finca/" target="_blank"><i class="fa-brands fa-instagram iconInstagram"></i></a>
+                <a class="mobileFooterIcons" href="https://twitter.com/Salonjardin_ver" target="_blank"><i class="fa-brands fa-twitter iconTwitter"></i></a>
               </div>
               <p class="mb-0 text-center">© 2022 Salon Jardín la Finca. Todos los derechos reservados.</p>
       </div>

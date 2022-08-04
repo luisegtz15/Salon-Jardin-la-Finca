@@ -1,10 +1,11 @@
+
 $colores:(
-    Location:#c26b7e,
-    Whatsapp:#4ac92a,
-    Mail:#b8b8d3,
-    Facebook:#7474ec,
-    Instagram:#a71e84,
-    Twitter:#6fbdc7
+    Location:#ff737e,
+    Whatsapp:#4dc247,
+    Mail:#b7c0f8,
+    Facebook:#3b5998,
+    Instagram:#c435bc,
+    Twitter:#55acee
     
 );
 
@@ -27,6 +28,28 @@ $icon:(
 @each $key, $var in $colores {
     .icon#{$key}{
         @extend .icon;
+        transition: scale, 0.2s;
+        &:hover{
+            color: $var;
+            transform: scale(110%);
+        }
+    }
+}
+
+$iconC:(
+    fuente:35px,
+    colornormal: black,
+);
+
+.iconC{
+    font-size: map-get($iconC , fuente );
+    color: map-get($iconC , colornormal );
+}
+
+@each $key, $var in $colores {
+    .iconC#{$key}{
+        @extend .iconC;
+        transition: scale, 0.2s;
         &:hover{
             color: $var;
             transform: scale(110%);

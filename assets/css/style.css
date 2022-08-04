@@ -2,29 +2,81 @@
   font-size: 25px;
   color: white; }
 
-.iconLocation:hover {
-  color: #c26b7e;
-  transform: scale(110%); }
+.iconLocation {
+  transition: scale, 0.2s; }
+  .iconLocation:hover {
+    color: #ff737e;
+    transform: scale(110%); }
 
-.iconWhatsapp:hover {
-  color: #4ac92a;
-  transform: scale(110%); }
+.iconWhatsapp {
+  transition: scale, 0.2s; }
+  .iconWhatsapp:hover {
+    color: #4dc247;
+    transform: scale(110%); }
 
-.iconMail:hover {
-  color: #b8b8d3;
-  transform: scale(110%); }
+.iconMail {
+  transition: scale, 0.2s; }
+  .iconMail:hover {
+    color: #b7c0f8;
+    transform: scale(110%); }
 
-.iconFacebook:hover {
-  color: #7474ec;
-  transform: scale(110%); }
+.iconFacebook {
+  transition: scale, 0.2s; }
+  .iconFacebook:hover {
+    color: #3b5998;
+    transform: scale(110%); }
 
-.iconInstagram:hover {
-  color: #a71e84;
-  transform: scale(110%); }
+.iconInstagram {
+  transition: scale, 0.2s; }
+  .iconInstagram:hover {
+    color: #c435bc;
+    transform: scale(110%); }
 
-.iconTwitter:hover {
-  color: #6fbdc7;
-  transform: scale(110%); }
+.iconTwitter {
+  transition: scale, 0.2s; }
+  .iconTwitter:hover {
+    color: #55acee;
+    transform: scale(110%); }
+
+.iconC, .iconCLocation, .iconCWhatsapp, .iconCMail, .iconCFacebook, .iconCInstagram, .iconCTwitter {
+  font-size: 35px;
+  color: black; }
+
+.iconCLocation {
+  transition: scale, 0.2s; }
+  .iconCLocation:hover {
+    color: #ff737e;
+    transform: scale(110%); }
+
+.iconCWhatsapp {
+  transition: scale, 0.2s; }
+  .iconCWhatsapp:hover {
+    color: #4dc247;
+    transform: scale(110%); }
+
+.iconCMail {
+  transition: scale, 0.2s; }
+  .iconCMail:hover {
+    color: #b7c0f8;
+    transform: scale(110%); }
+
+.iconCFacebook {
+  transition: scale, 0.2s; }
+  .iconCFacebook:hover {
+    color: #3b5998;
+    transform: scale(110%); }
+
+.iconCInstagram {
+  transition: scale, 0.2s; }
+  .iconCInstagram:hover {
+    color: #c435bc;
+    transform: scale(110%); }
+
+.iconCTwitter {
+  transition: scale, 0.2s; }
+  .iconCTwitter:hover {
+    color: #55acee;
+    transform: scale(110%); }
 
 nav {
   z-index: 10;
@@ -45,11 +97,14 @@ nav {
       padding: 10px 20px;
       border-radius: 10px;
       margin: 0 10px; }
-      nav .desktopList li a {
+      nav .desktopList li a:not(.navActive) {
         font-size: 20px;
         text-decoration: none;
-        color: white; }
-        nav .desktopList li a:hover {
+        color: white;
+        font-weight: bold;
+        transition: all, 0.2s; }
+        nav .desktopList li a:not(.navActive):hover {
+          font-size: 21px;
           color: #e77224; }
   nav .burgerOpen {
     color: white;
@@ -89,13 +144,24 @@ nav {
       align-items: center; }
       nav .burgerContainer .mobileList li {
         padding: 30px 0; }
-        nav .burgerContainer .mobileList li a {
+        nav .burgerContainer .mobileList li a:not(.navActive) {
           font-size: 20px;
           text-decoration: none;
           color: white;
-          font-weight: bold; }
-          nav .burgerContainer .mobileList li a:hover {
+          font-weight: bold;
+          transition: all, 0.2s; }
+          nav .burgerContainer .mobileList li a:not(.navActive):hover {
+            font-size: 21px;
             color: #e77224; }
+  nav .navActive {
+    font-size: 20px;
+    text-decoration: none;
+    color: #e77224;
+    font-weight: bold;
+    transition: all, 0.2s; }
+    nav .navActive:hover {
+      font-size: 21px;
+      color: #e77224; }
 
 * {
   box-sizing: content-box;
@@ -112,6 +178,12 @@ body h3 {
 body h5 {
   font-size: 18px; }
 
+body p {
+  font-size: 16px; }
+
+body li {
+  font-size: 16px; }
+
 @media screen and (min-width: 576px) {
   body h1 {
     font-size: 40px; } }
@@ -124,9 +196,7 @@ body h5 {
   body h3 {
     font-size: 20px; }
   body h5 {
-    font-size: 22px; }
-  body p {
-    font-size: 16px; } }
+    font-size: 22px; } }
 
 @media screen and (min-width: 992px) {
   body h1 {
@@ -136,6 +206,8 @@ body h5 {
   body h3 {
     font-size: 20px; }
   body p {
+    font-size: 18px; }
+  body li {
     font-size: 18px; } }
 
 @media screen and (min-width: 1500px) {
@@ -146,6 +218,8 @@ body h5 {
   body h3 {
     font-size: 25px; }
   body p {
+    font-size: 20px; }
+  body li {
     font-size: 20px; } }
 
 .shadows {
@@ -320,25 +394,80 @@ body h5 {
   .reservacionContainer .reservaCheckbox:checked ~ .indexReservarMobile {
     bottom: 0; }
 
+.cardPaquetes {
+  width: 90%;
+  cursor: pointer; }
+
+@media screen and (min-width: 576px) {
+  .cardPaquetes {
+    width: 70%;
+    transition: scale, 0.5s;
+    cursor: pointer; }
+    .cardPaquetes:hover {
+      transform: scale(115%); } }
+
+@media screen and (min-width: 768px) {
+  .cardPaquetes {
+    width: 40%;
+    transition: scale, 0.5s;
+    cursor: pointer; }
+    .cardPaquetes:hover {
+      transform: scale(115%); } }
+
+@media screen and (min-width: 1200px) {
+  .cardPaquetes {
+    width: 22%;
+    transition: scale, 0.5s;
+    cursor: pointer; }
+    .cardPaquetes:hover {
+      transform: scale(115%); } }
+
 .carouselGaleriaXl {
   width: 33.3%; }
+
+.video {
+  overflow: hidden;
+  border-radius: 30px; }
 
 .googleReviews {
   height: 350px;
   background-color: #212529;
   color: white; }
 
+.cardGaleria {
+  width: 80%;
+  transition: scale, 0.5s;
+  cursor: pointer; }
+
 @media screen and (min-width: 576px) {
   .googleReviews {
-    height: 300px; } }
+    height: 300px; }
+  .cardGaleria {
+    width: 45%;
+    transition: scale, 0.5s;
+    cursor: pointer; }
+    .cardGaleria:hover {
+      transform: scale(115%); } }
 
 @media screen and (min-width: 768px) {
   .googleReviews {
-    height: 250px; } }
+    height: 250px; }
+  .cardGaleria {
+    width: 38%;
+    transition: scale, 0.5s;
+    cursor: pointer; }
+    .cardGaleria:hover {
+      transform: scale(115%); } }
 
 @media screen and (min-width: 1200px) {
   .googleReviews {
-    height: 300px; } }
+    height: 320px; }
+  .cardGaleria {
+    width: 28%;
+    transition: scale, 0.5s;
+    cursor: pointer; }
+    .cardGaleria:hover {
+      transform: scale(115%); } }
 
 .contactContainer {
   border-radius: 20px; }
@@ -348,21 +477,25 @@ body h5 {
 
 .contactIcon {
   margin: 15px 10px; }
-  .contactIcon i {
-    font-size: 35px;
-    color: #212529; }
-    .contactIcon i:hover {
-      color: #e77224;
-      transform: scale(110%); }
+
+form .form-control:focus, form .form-select:focus {
+  border-color: transparent;
+  box-shadow: #e77224a1 0px 0px 0px 4px; }
 
 footer {
   color: white;
   background-color: #212529; }
+  footer .footerLogo {
+    transition: scale, 0.5s; }
+    footer .footerLogo:hover {
+      transform: scale(115%); }
+  footer p {
+    font-size: 16px; }
   footer a {
-    width: 40px; }
+    width: 25px; }
   footer .desktopFooterIcons-1 {
-    margin-right: 0px; }
+    margin-right: 15px; }
   footer .desktopFooterIcons-2 {
-    margin: 20px; }
+    margin-left: 41px; }
   footer .mobileFooterIcons {
     margin: 0 10px; }

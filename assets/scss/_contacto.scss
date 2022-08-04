@@ -6,12 +6,14 @@
 }
 .contactIcon{
     margin: 15px 10px;
-    i{
-        font-size: 35px;
-        color: #212529;
-        &:hover{
-            color: #e77224;
-            transform: scale(110%);
+
+}
+form{
+    .form-control, .form-select{
+        &:focus{
+            border-color: transparent;
+            box-shadow: #e77224a1 0px 0px 0px 4px;
         }
     }
 }
+

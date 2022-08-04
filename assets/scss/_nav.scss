@@ -19,11 +19,14 @@ nav{
             padding: 10px 20px;
             border-radius: 10px;
             margin: 0 10px;
-            a{
+            a:not(.navActive){
                 font-size: 20px;
                 text-decoration: none;
                 color: white;
+                font-weight: bold;
+                transition: all, 0.2s;
                 &:hover{
+                    font-size: 21px;
                     color: #e77224;
                 }
             }
@@ -70,16 +73,29 @@ nav{
             align-items: center;
             li{
                 padding: 30px 0;
-                a{
+                a:not(.navActive){
                     font-size: 20px;
                     text-decoration: none;
                     color: white;
                     font-weight: bold;
+                    transition: all, 0.2s;
                     &:hover{
+                        font-size: 21px;
                         color: #e77224;
                     }
                 }
             }
+        }
+    }
+    .navActive{
+        font-size: 20px;
+        text-decoration: none;
+        color: #e77224;
+        font-weight: bold;
+        transition: all, 0.2s;
+        &:hover{
+            font-size: 21px;
+            color: #e77224;
         }
     }
 }
