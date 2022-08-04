@@ -21,11 +21,7 @@
     }
     .cardGaleria{
         width: 45%;
-        transition: scale, 0.5s;
         cursor: pointer;
-        &:hover{
-            transform: scale(115%);
-        }
     }
 }
 @media screen and (min-width: 768px){
@@ -34,11 +30,7 @@
     }
     .cardGaleria{
         width: 38%;
-        transition: scale, 0.5s;
         cursor: pointer;
-        &:hover{
-            transform: scale(115%);
-        }
     }
 }
 @media screen and (min-width: 1200px){

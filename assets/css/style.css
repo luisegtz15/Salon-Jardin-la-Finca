@@ -444,20 +444,14 @@ body li {
     height: 300px; }
   .cardGaleria {
     width: 45%;
-    transition: scale, 0.5s;
-    cursor: pointer; }
-    .cardGaleria:hover {
-      transform: scale(115%); } }
+    cursor: pointer; } }
 
 @media screen and (min-width: 768px) {
   .googleReviews {
     height: 250px; }
   .cardGaleria {
     width: 38%;
-    transition: scale, 0.5s;
-    cursor: pointer; }
-    .cardGaleria:hover {
-      transform: scale(115%); } }
+    cursor: pointer; } }
 
 @media screen and (min-width: 1200px) {
   .googleReviews {
